@@ -86,3 +86,66 @@ body{
   right: -2px;
   justify-content: center;
 }
+
+.top{
+  /* высота экрана минус 80пх хеддер 1пх бордер*/
+  min-height: calc(100vh - 81px);
+  /* вставляем картинку как бекграунд */
+  background-image: url(../images/top-bg.jpg);
+  /* чтоб картинка не размножалась */
+  background-repeat: no-repeat;
+  /* тчо бы зумилась хорошо */
+  background-size: cover;
+  /* чтобы отображалсь нормально а не часть */
+  background-position: bottom center;
+}
+
+.title{
+  padding-top: 13%;
+  font-size: 96px;
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.top__text{
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+.bay__text{
+  padding-top: 6px;
+  font-size: 13px;
+}
+
+.bay-btn{
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  /* задаем родителю диспФлекс */
+  display: flex;
+  padding: 0;
+  text-transform: uppercase;
+  padding: 1px;
+}
+
+.bay-btn__text{
+  color: #F6F4F5;
+  /* уберем по 1пх от всех значений из за падинга 1пх выше*/
+  /* padding-left: 111px;
+  padding-right: 111px;
+  padding-top: 21px;
+  padding-bottom: 21px; */
+  padding: 20px 110px;
+}
+
+.bay-btn__price{
+  background-color: #F6F4F5;
+  /* уберем по 1пх от всех значений из за падинга 1пх выше*/
+  /* padding-left: 106px;
+  padding-right: 106px; */
+  padding: 20px 105px;
+}
