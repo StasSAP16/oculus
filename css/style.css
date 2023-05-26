@@ -1,41 +1,41 @@
 @font-face {
-  font-family: 'Helvetica', sans-serif;
+  font-family: "Helvetica", sans-serif;
   src: url(../fonts/helvetica.woff2);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Helvetica-Bold', sans-serif;
+  font-family: "Helvetica-Bold", sans-serif;
   src: url(../fonts/helvetica-bold.woff2);
   font-style: normal;
   font-weight: 700;
 }
 
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-button{
+button {
   /* пишем чтобы цвет наследовался */
   color: inherit;
   font-size: inherit;
@@ -46,7 +46,7 @@ button{
   padding: 0;
 }
 
-.container{
+.container {
   /* max-width: 1200px; 1220 тк мы по 10-пх добавляем слева и справа по бокам строкой ниже, а так ширина контейнера 1200 по макету */
   max-width: 1220px;
   padding: 0 10px;
@@ -54,25 +54,25 @@ button{
   margin: 0 auto;
 }
 
-.section-title{
+.section-title {
   text-transform: uppercase;
   font-weight: 400;
 }
 
-body{
-  font-family: 'Helvetica', sans-serif;
+body {
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 16px;
   /* 1.4 - 140% от 16px */
   line-height: 1.4;
-  color: #5C5C5E;
+  color: #5c5c5e;
 }
 
-.header{
-  border-bottom: 1px solid #CACAD6;
+.header {
+  border-bottom: 1px solid #cacad6;
 }
 
-.nav{
+.nav {
   /* переписываем ставим по центру лого */
   /* display: flex; */
   display: grid;
@@ -82,21 +82,21 @@ body{
   height: 80px;
 }
 
-.menu{
+.menu {
   display: flex;
   gap: 0 20px;
 }
 
-.logo{
+.logo {
   justify-self: center;
 }
 
-.basket{
+.basket {
   position: relative;
   justify-self: end;
 }
 
-.basket--on span{
+.basket--on span {
   font-size: 11px;
   width: 15px;
   height: 15px;
@@ -111,7 +111,7 @@ body{
   justify-content: center;
 }
 
-.top{
+.top {
   /* высота экрана минус 80пх хеддер 1пх бордер*/
   min-height: calc(100vh - 81px);
   /* вставляем картинку как бекграунд */
@@ -124,32 +124,32 @@ body{
   background-position: bottom center;
 }
 
-.title{
+.title {
   padding-top: 13%;
   font-size: 96px;
   margin-bottom: 10px;
   font-weight: 400;
 }
 
-.subtitle{
+.subtitle {
   font-size: 36px;
   margin-bottom: 5px;
 }
 
-.top__text{
+.top__text {
   font-size: 13px;
   margin-bottom: 50px;
 }
 
-.bay__text{
+.bay__text {
   padding-top: 6px;
   font-size: 13px;
 }
 
-.bay-btn{
+.bay-btn {
   cursor: pointer;
   border: none;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   /* задаем родителю диспФлекс */
   display: flex;
   padding: 0;
@@ -157,8 +157,8 @@ body{
   padding: 1px;
 }
 
-.bay-btn__text{
-  color: #F6F4F5;
+.bay-btn__text {
+  color: #f6f4f5;
   /* уберем по 1пх от всех значений из за падинга 1пх выше*/
   /* padding-left: 111px;
   padding-right: 111px;
@@ -168,90 +168,90 @@ body{
   text-transform: uppercase;
 }
 
-.bay-btn__price{
-  background-color: #F6F4F5;
+.bay-btn__price {
+  background-color: #f6f4f5;
   /* уберем по 1пх от всех значений из за падинга 1пх выше*/
   /* padding-left: 106px;
   padding-right: 106px; */
   padding: 20px 105px;
 }
 
-.features{
+.features {
   padding: 100px 0;
 }
 
-.features__titles{
+.features__titles {
   display: flex;
 }
 
-.features__title{
+.features__title {
   flex-basis: 300px;
   /* резервируем место что бы в случае длинной записи не поцеловал соседний тайтл */
   padding-right: 20px;
 }
 
-.features__text{
+.features__text {
   max-width: 330px;
   text-transform: uppercase;
   font-size: 36px;
   margin-bottom: 2px;
-  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.tabs{
+.tabs {
   display: grid;
   grid-template-columns: 300px auto;
 }
 
-.tabs__btn{
+.tabs__btn {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.tabs__btn-item{
+.tabs__btn-item {
   /* шрифт болт фонт вейт 700 но в фигме 400 - ошибка в фигме */
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.tabs__btn-item--active{
+.tabs__btn-item--active {
   color: #070707;
 }
 
-.tabs__content-item{
+.tabs__content-item {
   display: grid;
   grid-template-columns: auto 280px;
   grid-template-rows: auto 150px;
   gap: 40px;
   opacity: 0;
   position: absolute;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.tabs__content-item--active{
+.tabs__content-item--active {
   opacity: 1;
 }
 
-.tabs__content{
+.tabs__content {
   position: relative;
   min-height: 300px;
 }
 
-.tabs__content-img{
+.tabs__content-img {
   grid-row: 1/-1;
   align-self: stretch;
 }
 
-.tabs__content-box h3{
+.tabs__content-box h3 {
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 5px;
 }
 
-.video{
+.video {
   grid-column: 2/3;
   width: 280px;
   height: 150px;
@@ -266,11 +266,84 @@ body{
   padding: 9px 10px;
 }
 
-.video__btn{
+.video__btn {
   margin-left: 22px;
 }
 
-.video span{
+.video span {
   font-size: 13px;
-  color: #F6F4F5;
+  color: #f6f4f5;
+}
+
+.game {
+  margin-bottom: 100px;
+}
+
+.game__title {
+  margin-bottom: 50px;
+}
+
+.game__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.game__descr {
+  padding-right: 10px;
+}
+
+.game__descr-title {
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.game__descr-text{
+  margin-bottom: 24px;
+}
+
+.game__link{
+  /* что бы подчин законам блочности */
+  display: inline-block;
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* делаем падинги дя резервирования места в случае увеличения кол-ва символов */
+  padding: 16px 15px 12px;
+  /* делаем кнопку на ширину 225пх и ставим поцентру */
+  width: 225px;
+  text-align: center;
+  border: 1px solid #BC10D8;
+}
+
+.geme__item{
+  border: 1px solid #BC10D8;
+  padding: 10px 20px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.geme__item-img{
+  margin-bottom: 10px;
+}
+
+.game__item-title{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.game__item-text{
+  margin-bottom: 30px;
+}
+
+.game__item-link{
+  background: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: auto;
 }
